@@ -1,0 +1,32 @@
+/*  ___   ___  ___  _   _  ___   ___   ____ ___  ____  
+ * / _ \ /___)/ _ \| | | |/ _ \ / _ \ / ___) _ \|    \ 
+ *| |_| |___ | |_| | |_| | |_| | |_| ( (__| |_| | | | |
+ * \___/(___/ \___/ \__  |\___/ \___(_)____)___/|_|_|_|
+ *                  (____/    
+ * www.osoyoo.com voltage sensor
+ * program tutorial :http://osoyoo.com/2016/06/20/voltage-detect-sensor/
+ *  Copyright John Yu
+ */
+#include 
+ int val;
+ int val1,val2;
+
+void setup()
+ {
+ Serial.begin(9600);
+ }
+ void loop()
+ {
+ float temp;
+ val=analogRead(1);
+ temp=val/4.092;
+ val=(int)temp;//
+ val1=((val%100)/10);
+ val2=val%10;
+ Serial.print("Voltage: ");
+ Serial.print(val1);
+ Serial.print(".");
+ Serial.print(val2);
+ Serial.println("V");
+ delay(1000);
+ }

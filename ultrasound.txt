@@ -1,0 +1,37 @@
+/*  ___   ___  ___  _   _  ___   ___   ____ ___  ____  
+ * / _ \ /___)/ _ \| | | |/ _ \ / _ \ / ___) _ \|    \ 
+ *| |_| |___ | |_| | |_| | |_| | |_| ( (__| |_| | | | |
+ * \___/(___/ \___/ \__  |\___/ \___(_)____)___/|_|_|_|
+ *                  (____/    
+ *  project tutorial url:http://osoyoo.com/?p=1109	 
+ *	copyright osoyoo.com
+ */	
+int inputPin=4; // pin to read signal from sensor
+ int outputPin=5; // pin to send  signal to sensor
+ int ledpin=13;
+ void setup()
+ {
+ Serial.begin(9600);
+ pinMode(ledpin,OUTPUT);
+ pinMode(inputPin, INPUT);
+ pinMode(outputPin, OUTPUT);
+ }
+ void loop()
+
+{
+ digitalWrite(outputPin, LOW); 
+ delayMicroseconds(2);
+ digitalWrite(outputPin, HIGH);   
+ delayMicroseconds(10);
+ digitalWrite(outputPin, LOW);  
+ int distance = pulseIn(inputPin, HIGH);  
+ distance= distance/58; 
+ Serial.println(distance); //print distance value in cm
+ delay(50);
+ if (distance >=50)
+ {// light up LED if distance more than 50cm
+ digitalWrite(ledpin,HIGH);
+ }// turn off LED if distance less than 50cm
+ else
+ digitalWrite(ledpin,LOW);
+ }
