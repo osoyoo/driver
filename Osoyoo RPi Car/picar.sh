@@ -8,15 +8,15 @@ mkdir   /home/pi/osoyoo-robot
 mkdir   /home/pi/osoyoo-robot/cam-robot
 
 cd /home/pi/osoyoo-robot/cam-robot && 
-wget  http://osoyoo.com/driver/WebIOPi-0.7.1.tar.gz &&
-wget  http://osoyoo.com/driver/mjpg-streamer.tar.gz &&
-wget  http://osoyoo.com/driver/robot.tar.gz &&
+wget --no-check-certificate http://osoyoo.com/driver/WebIOPi-0.7.1.tar.gz &&
+wget --no-check-certificate http://osoyoo.com/driver/mjpg-streamer.tar.gz &&
+wget --no-check-certificate http://osoyoo.com/driver/robot.tar.gz &&
 tar  -xzvf  WebIOPi-0.7.1.tar.gz &&
 tar  -xzvf   mjpg-streamer.tar.gz &&
 tar  -xzvf  robot.tar.gz
 
 cd /home/pi/osoyoo-robot/cam-robot/WebIOPi-0.7.1 && 
-wget   http://osoyoo.com/driver/webiopi-pi2bplus.patch &&
+wget --no-check-certificate  http://osoyoo.com/driver/webiopi-pi2bplus.patch &&
 patch    -p1   -i  webiopi-pi2bplus.patch
 
 echo '########################## download complete ################'
