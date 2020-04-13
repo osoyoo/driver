@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/1010Technologies/pxt-makerbit-ir-receiver.svg?branch=master)](https://travis-ci.org/1010Technologies/pxt-makerbit-ir-receiver)
 
-MakeCode extension for OSOYOO Infrared Wireless Module Kit. The extension should also work with other with IR receivers and NEC compatible IR remotes.
+MakeCode extension for Keyestudio Infrared Wireless Module Kit. The extension should also work with other with IR receivers and NEC compatible IR remotes.
 
 ## MakerBit Board
 
