@@ -105,11 +105,6 @@ def turnLeft():
 	#time.sleep(0.25)  
 	#stopcar()
 	
-init()
-
-n=1	
-
-while (n > 0):             
 
 
 	
@@ -132,6 +127,3 @@ turnRight()
 time.sleep(1)  
 stopcar()
 time.sleep(0.25)
-
-n = n + 1
-continue
