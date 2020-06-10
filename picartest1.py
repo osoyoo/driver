@@ -106,24 +106,24 @@ def turnLeft():
 	#stopcar()
 	
 
-
+while Ture
 	
-forward()
-time.sleep(1)  
-stopcar()
-time.sleep(0.25)
+	forward()
+	time.sleep(1)  
+	stopcar()
+	time.sleep(0.25)
 
-backward()
-time.sleep(1)  
-stopcar()
-time.sleep(0.25) 
+	backward()
+	time.sleep(1)  
+	stopcar()
+	time.sleep(0.25) 
 
-turnLeft()
-time.sleep(1)  
-stopcar()
-time.sleep(0.25)
+	turnLeft()
+	time.sleep(1)  
+	stopcar()
+	time.sleep(0.25)
 	
-turnRight()
-time.sleep(1)  
-stopcar()
-time.sleep(0.25)
+	turnRight()
+	time.sleep(1)  
+	stopcar()
+	time.sleep(0.25)
