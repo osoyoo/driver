@@ -13,9 +13,9 @@ import Adafruit_PCA9685
 import RPi.GPIO as GPIO
 # Initialise the PCA9685 using the default address (0x40).
 pwm = Adafruit_PCA9685.PCA9685()
-high_speed = 4096  # Max pulse length out of 4096
-mid_speed = 4096  # Max pulse length out of 4096
-low_speed = 4096  # Max pulse length out of 4096
+high_speed = 4000  # Max pulse length out of 4096
+mid_speed = 3500  # Max pulse length out of 4096
+low_speed = 3000  # Max pulse length out of 4096
 short_delay=0.1
 long_delay=0.2
 extra_long_delay=0.3
